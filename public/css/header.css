@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    justify-content: flex-end;
+}
+
+.header-connection {
+    display: flex;
+    align-items: center;
+}
+
+.header-connection-text {
+    font-size: 0.8em;
+    padding: 0 8px;
+}
+
+.header-connection-statusicon {
+    background-color: aliceblue;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color:lightgray;
+}
+
+.header-connection-statusicon.online {
+    background-color: greenyellow;
+}

@@ -1,0 +1,88 @@
+.main-header {
+    display: grid;
+}
+
+.main-header-herobanner {
+    position: relative;
+    min-height: 400px;
+    background-color: #fff;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media only screen and (min-width: 768px) { 
+    .main-header-herobanner {
+        flex-direction: row;
+    }
+}
+
+.main-header-herobanner::before {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-image: url("https://picsum.photos/id/652/3000/2000");
+    background-position: center;
+    filter: brightness(40%);
+}
+
+.main-header-welcomemessage {
+    font-size: 2em;
+    z-index: 1;
+}
+
+.main-header-clock {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.main-header-clock-time {
+    font-size: 10em;
+}
+
+.main-header-clock-date {
+    font-size: 2em;
+}
+
+.main-header-quickinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+}
+
+.main-header-quickinfo-item {
+    display: flex;
+    flex-direction: column;
+    word-break:break-all;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) { 
+    .main-header-quickinfo-item {
+        align-items: flex-end;
+    }
+}
+
+.main-header-quickinfo-item-total {
+    font-size: 1.5em;
+}
+
+.main-header-quickinfo-item-description {
+    font-size: 1.25em;
+}
+
+.main-header-quickinfo-item-description i {
+    font-size: 1.3em;
+}

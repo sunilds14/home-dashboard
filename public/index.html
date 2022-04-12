@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>css grid test</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/f1f2e9b053.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>Home Dashboard</h1>
+    <div class="grid-container">
+        <header class="header">
+            <div class="header-connection">
+                <div class="header-connection-text">
+                    Status
+                </div>
+                <div id="status-icon" class="header-connection-statusicon">
+                </div>
+            </div>
+        </header>
+       <!--<aside class="sidenav"></aside>-->
+        <main class="main">
+            <div class="main-header">
+                <div class="main-header-herobanner">
+                    <div class="main-header-welcomemessage">
+                        Hello, <strong>Subrai</strong>
+                    </div>
+                    <div class="main-header-clock">
+                        <div class="main-header-clock-time"><span id="clock-hr"></span>:<span id="clock-min"></span></div>
+                        <div class="main-header-clock-date">
+                            <i class="fa-solid fa-calendar-days"></i> 12/04/22
+                        </div>
+                    </div>
+                    <div class="main-header-quickinfo">
+                        <div class="main-header-quickinfo-item">
+                            <div class="main-header-quickinfo-item-total">
+                                <i class="fa-solid fa-cloud-rain"></i> 21° 
+                            </div>
+                            <div class="main-header-quickinfo-item-description">
+                                <i class="fa-solid fa-location-dot"></i> Rothley, Leicestershire
+                            </div>
+                        </div>
+                        <div class="main-header-quickinfo-item">
+                            <div class="main-header-quickinfo-item-total">
+                                17°
+                            </div>
+                            <div class="main-header-quickinfo-item-description">
+                                <i class="fa-solid fa-temperature-half"></i> 8 Orchard View
+                            </div>
+                        </div>
+                        <div class="main-header-quickinfo-item">
+                            <div class="main-header-quickinfo-item-total">
+                                10
+                            </div>
+                            <div class="main-header-quickinfo-item-description">
+                                <i class="fa-solid fa-envelope"></i> New emails
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-overview">
+                <div class="main-overview-overviewcard">
+                    <div class="main-overview-overviewcard-icon energy">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="main-overview-overviewcard-info">
+                        <p>Energy</p>
+                        <p>351w</p>
+                    </div>
+                </div>
+                <div class="main-overview-overviewcard">
+                    <div class="main-overview-overviewcard-icon gas">
+                        <i class="fa-solid fa-fire-flame-simple"></i>
+                    </div>
+                    <div class="main-overview-overviewcard-info">
+                        <p>Gas</p>
+                        <p>220w</p>
+                    </div>
+                </div>
+                <div class="main-overview-overviewcard">
+                    <div class="main-overview-overviewcard-icon event">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="main-overview-overviewcard-info">
+                        <p>Upcoming event</p>
+                        <p>Exercise class</p>
+                    </div>
+                </div>
+                <div class="main-overview-overviewcard">
+                    <div class="main-overview-overviewcard-icon unreademails">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="main-overview-overviewcard-info">
+                        <p>Unread emails</p>
+                        <p>12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-bottom">
+                <div class="main-bottom-diary">
+                    <div class="main-bottom-diary-header">
+                        <strong><i class="fa-solid fa-book"></i> Diary</strong>
+                    </div>
+                    <div class="main-bottom-diary-itemslist">
+                        <div class="main-bottom-diary-item">
+                            <div>Today - 20:00</div>
+                            <div><i class="fa-solid fa-dumbbell"></i> Exercise class</div>
+                        </div>
+                        <div class="main-bottom-diary-item">
+                            <div>Tuesday - 20:00</div>
+                            <div><i class="fa-solid fa-dumbbell"></i> Exercise class</div>
+                        </div>
+                        <div class="main-bottom-diary-item">
+                            <div>Wednesday - 14:00</div>
+                            <div><i class="fa-solid fa-stethoscope"></i> Sunil's Doctor appointment</div>
+                        </div>
+                        <div class="main-bottom-diary-item">
+                            <div>Thursday - 14:00</div>
+                            <div><i class="fa-solid fa-cake-candles"></i> Mum's birthday</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-bottom-todolist">
+                    <div class="main-bottom-todolist-header">
+                        <strong><i class="fa-solid fa-pencil"></i> To-do list</strong>
+                    </div>
+                    <div class="main-bottom-todolist-itemslist">
+                        <div class="main-bottom-todolist-item">
+                            <div>Put wash on</div>
+                        </div>
+                        <div class="main-bottom-todolist-item">
+                            <div>Hang washing out</div>
+                        </div>
+                        <div class="main-bottom-todolist-item">
+                            <div>Fold clothes</div>
+                        </div>
+                        <div class="main-bottom-todolist-item">
+                            <div>Return parcel</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>2022 &copy;</p>
+            <p>Built by Sunil Subrai</p>
+        </footer>
+    </div>
 </body>
+
 </html>

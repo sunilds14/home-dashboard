@@ -1,0 +1,95 @@
+.main-bottom {
+    display: grid;
+    grid-template-columns: none;
+    margin: 20px;
+    grid-gap: 20px;
+}
+
+@media only screen and (min-width: 590px) { 
+    .main-bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.main-bottom-diary {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.main-bottom-diary-header {
+    font-size: 1.25em;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color:midnightblue;
+    color: #fff;
+}
+
+.main-bottom-diary-itemslist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.main-bottom-diary-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+@media only screen and (min-width: 740px) { 
+    .main-bottom-diary-item {
+        flex-direction: row;
+        gap: unset;
+    }
+}
+
+.main-bottom-diary-item div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 740px) { 
+    .main-bottom-diary-item div {
+        justify-content: unset;
+    }
+}
+
+.main-bottom-diary-item i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.main-bottom-todolist {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;    
+}
+
+.main-bottom-todolist-header {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    padding: 10px 20px;
+    background-color:midnightblue;
+    color: #fff;
+}
+
+.main-bottom-todolist-itemslist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;   
+}
+
+.main-bottom-todolist-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

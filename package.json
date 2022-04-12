@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server -c-1 -p 8081"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,6 @@
   },
   "homepage": "https://github.com/sunilds14/home-dashboard#readme",
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "http-server": "^14.1.0"
   }
 }
