@@ -13,6 +13,6 @@ export default class TodaysDate {
     }
     setTodaysDate() {
         this.getTodaysDate()
-        setInterval(this.getTodaysDate, 3600000)
+        setInterval(this.getTodaysDate, 1000 * 60 * 60)
     }
 }
